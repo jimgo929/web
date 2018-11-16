@@ -1,0 +1,566 @@
+﻿@charset "utf-8";
+
+
+/* ----- CSS reset ----- */
+html, body {
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+	font-family: 微軟正黑體, Arial, Helvetica, sans-serif;
+	background-color: #fff;
+	background-image: url(../images/com-bg.gif);
+}
+html {overflow: auto;} /* remove ie7 scrollbar without overflow */
+img {border: none; vertical-align: middle;}
+a:hover {color: #f85900; text-decoration: underline;}
+div, dl, li, dt, dd, p, span, blockquote, pre, form, fieldset, input, textarea, ul, ol, hr {padding: 0px; margin: 0px;}
+h1, h2, h3, h4, h5, h6 {margin: 0; padding: 0;  font-weight: normal; display: inline;}
+
+
+/* ----- clearfix ----- */
+.clearfix:after {content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.clearfix {display: inline-block;}
+* html .clearfix { height: 1%;}	
+.clearfix {display: block;}	
+
+
+/* ----- layout ----- */
+#wrapper {
+	width: 100%;
+	margin: 0px auto;
+	background-image: url(../images/com-bg-1.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+}
+
+
+/* ----- header ----- */
+#header {
+	position: relative;
+	width: 944px;
+	height: 70px;
+	margin: 0px auto;
+}
+#header #logo {
+	position: absolute;
+	left: 0px;
+	top: 14px;
+}
+#header #addon {
+	position: absolute;
+	width: 460px;
+	left: 484px;
+	top: 28px;
+	font-size: 12px;
+	text-align: right;
+}
+#header #addon span {
+	margin-left: 8px;
+}
+#header #addon span a {
+	font-size: 12px;
+	color: #339;
+	text-decoration: none;
+}
+#header #addon span a:hover {
+	color: #339;
+	position:relative;
+	left: 1px;
+	top: 1px;
+}
+#header #addon span.lsky a {
+	color: #09f;
+}
+#header #addon span.lsky a:hover {
+	color: #09f;
+}
+#header #addon span.keyU a {
+	color: #fff;
+}
+#header #addon span.keyU a:hover {
+	color: #fff;
+}
+
+
+/* ----- menu ----- */
+#menu {
+	position: relative;
+	width: 964px;
+	height: 45px;
+	margin: 0px auto;
+	background-image: url(../images/com-menu-bg.gif);
+}
+#menu ul {
+	width: 920px;
+	height: 35px;
+	margin: 0px auto;
+}
+#menu li {
+	float: left;
+	list-style-type: none;
+}
+#menu li a {
+	display: block;
+	width: 115px;
+	height: 28px;
+	background-image: url(../images/com-menu.gif);
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 7px;
+}
+#menu li a:hover {
+	background-position: 0px -35px;
+}
+
+
+/* ----- content ----- */
+#content {
+	position: relative;
+	width: 964px;
+	margin: 0px auto;
+	background-image: url(../images/com-content-bg.png);
+	padding: 10px 0px 30px 0px;
+}
+#content #main {
+	height: 140px;
+	width: 904px;
+	margin: 0px auto;
+	background-image: url(../images/com-main.jpg);
+}
+#content #main #share {
+	position: absolute;
+	width: 90px;
+	top: 120px;
+	left: 840px;
+}
+#content .key a {
+	font-size: 12px;
+	color: #fff;
+}
+#content .key a:hover {
+	color: #fff;
+}
+#content .keyR a {
+	font-size: 12px;
+	color: #eee;
+}
+#content .keyR a:hover {
+	color: #eee;
+}
+#content #primary {
+	float: left;
+	width: 624px;
+	margin-top: 15px;
+	margin-left: 50px;
+}
+#content #primary2 {
+	float: left;
+	width: 874px;
+	margin-top: 15px;
+	margin-left: 50px;
+}
+#content #secondary {
+	float: right;
+	width: 220px;
+	margin-right: 30px;
+}
+
+
+/* ----- primary ----- */
+#primary2 #unitBar {
+	background-image: url(../images/com-line-1.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	height: 35px;
+	margin-bottom: 30px;
+}
+#primary2 #unitBar #ubTitle {
+	float: left;
+	font-size: 130%;
+	font-weight: bold;
+	color: #0099ff;
+}
+#primary2 #unitBar #ubLocation {
+	float: right;
+	font-size: 80%;
+	color: #333;
+	margin-top: 5px;
+}
+#primary2 #unitBar #ubLocation a {
+	color: #333;
+	text-decoration: none;
+}
+
+/* ----- primary ----- */
+#primary #unitBar {
+	background-image: url(../images/com-line-1.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	height: 35px;
+	margin-bottom: 30px;
+}
+#primary #unitBar #ubTitle {
+	float: left;
+	font-size: 130%;
+	font-weight: bold;
+	color: #0099ff;
+}
+#primary #unitBar #ubLocation {
+	float: right;
+	font-size: 80%;
+	color: #333;
+	margin-top: 5px;
+}
+#primary #unitBar #ubLocation a {
+	color: #333;
+	text-decoration: none;
+}
+
+
+/* ----- secondary ----- */
+#secondary #sInner {
+	background-color: #eee;
+	background-image: url(../images/com-bg-2.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	padding-top: 15px;
+}
+#secondary #sInner .sItem {
+	width: 180px;
+	margin: 0px auto 20px auto;
+	font-size: 13px;
+}
+#secondary #sInner .sItem a:hover {
+	position:relative;
+	left: 1px;
+	top: 1px;
+}
+#secondary #sInner .sItem .sTitle {
+	padding-left: 2px;
+	padding-bottom: 4px;
+}
+#secondary #sInner .sItem .sText {
+	font-size: 13px;
+	color: #333;
+	font-family: 微軟正黑體, Arial, Helvetica, sans-serif;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	padding: 3px 5px;
+}
+#secondary #sInner .sItem .sText:focus {
+	border: 1px solid #e1ba6f;
+	box-shadow: 0px 0px 4px rgba(225,186,111,1);
+	-webkit-box-shadow: 0px 0px 4px rgba(225,186,111,1);
+	-moz-box-shadow: 0px 0px 4px rgba(225,186,111,1);
+}
+#secondary #sInner .sItem li {
+	margin-bottom: 2px;
+	list-style-type: none;
+}
+#secondary #sBanner {
+	width: 180px;
+	margin: 0px auto;
+}
+#secondary #sBanner li {
+	margin-bottom: 5px;
+	list-style-type: none;
+}
+#secondary #sBanner li a:hover {
+	position:relative;
+	left: 1px;
+	top: 1px;
+}
+
+
+/* ----- sitemap ----- */
+#sitemap {
+	position: relative;
+	width: 904px;
+	height: 135px;
+	background-image: url(../images/com-sitemap-bg.png);
+	margin: 0px auto;
+	padding: 40px;
+}
+#sitemap .div {
+	background-image: url(../images/com-line-2.gif);
+	background-repeat: repeat-y;
+	background-position: center top;
+}
+#sitemap dt {
+	margin-bottom: 2px;
+}
+#sitemap dt a {
+	font-size: 15px;
+	font-weight: bold;
+	color: #5d99d4;
+	text-decoration: none;
+}
+#sitemap dt a:hover {
+	color: #f85900;
+	position:relative;
+	left: 1px;
+	top: 1px;
+}
+#sitemap dd {
+	font-size: 12px;
+	line-height: 18px;
+}
+#sitemap dd a {
+	color: #666;
+	text-decoration: none;
+}
+#sitemap dd a:hover {
+	color: #f85900;
+	position:relative;
+	left: 1px;
+	top: 1px;
+}
+#sitemap .more a {
+	display: block;
+	width: 16px;
+	height: 16px;
+	background-image: url(../images/com-more.png);
+	overflow: hidden;
+	text-indent: -9999px;
+	margin-top: 5px;
+}
+#sitemap .more a:hover {
+	background-position: 0px -16px;
+}
+
+
+/* ----- footer ----- */
+#footer {
+	width: 944px;
+	height: 100px;
+	margin: 0px auto;
+}
+#footer #aplus {
+	float: left;
+	margin-top: 30px;
+}
+#footer #logo {
+	float: left;
+	margin-left: 10px;
+}
+#footer #copyright {
+	float: left; 
+	width: 650px;
+	font-size: 12px;
+	line-height: 18px;
+	color: #333;
+	margin-top: 8px;
+	margin-left: 10px;
+}
+#footer #copyright a {
+	color: #014a91;
+	text-decoration: none;
+}
+#footer #copyright a:hover {
+	color: #014a91;
+	position:relative;
+	left: 1px;
+	top: 1px;
+}
+#footer #copyright span {
+	color: #f85900;
+}
+#footer #top {
+	float: right; 
+	width: 26px;
+	margin-top: 30px;
+}
+#footer #top a {
+	display: block;
+	width: 26px;
+	height: 28px;
+	background-image: url(../images/com-tail-top-off.gif);
+	overflow: hidden;
+	text-indent: -9999px;
+}
+#footer #top a:hover {
+	background-image: url(../images/com-tail-top-on.gif);
+}
+#footer #copyright h1 {
+	font-size: 12px;
+	color: #333;
+	display: inline;
+}
+#footer #copyright h1 a {
+	color: #333;
+	text-decoration: none;
+	display: inline;
+}
+#footer #copyright h1 a:hover {
+	color: #333;
+	position:relative;
+	text-decoration: none;
+	display: inline;
+	left: 0px;
+	top: 0px;
+	}
+
+/* ----- page ----- */
+.page{
+	clear:both;
+	width:100%;
+	margin-top:15px;
+	overflow:hidden;
+	zoom:1;
+}
+.page .total{
+	float:left;
+	font-size: 12px;
+	color: #666666;
+}
+.page .go{
+	float: right;
+	width: 20%;
+	font-size: 12px;
+	color: #666666;
+	text-align: right;
+}
+.page .gototal{
+	font-size: 12px;
+	color: #666666;
+}
+.page .go input{
+	font-size: 12px;
+	color: #333333;
+	font-family: Arial, Helvetica, sans-serif;
+	border-width: 1px;
+	border-style: solid;
+	border-top-color: #abadb3;
+	border-right-color: #dbdfe6;
+	border-bottom-color: #dbdfe6;
+	border-left-color: #dbdfe6;
+	height: 20px;
+}
+.page .go img{
+	margin-bottom: -2px;
+}
+.page .num{
+	float: left;
+	width: 60%;
+	font-size: 12px;
+	color: #cccccc;
+	text-align: center;
+}
+.page .num img{
+	margin-left:2px;
+	margin-right:2px;
+}
+.page .num a{
+	padding-left:2px;
+	padding-right:2px;
+	font-size: 12px;
+	color: #666666;
+	text-decoration: none;
+}
+.page .num .cur{
+	padding-left:2px;
+	padding-right:2px;
+	font-weight:bold;
+	color:#000;
+}
+
+.btngo{background-image:url(../images/com-page-go.gif);border:0px;width:22px;height:23px;cursor:hand;}
+/* ----- common ----- */
+.input {
+	font-size: 13px;
+	color: #333;
+	font-family: 微軟正黑體, Arial, Helvetica, sans-serif;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	padding: 2px 5px;
+}
+.input:focus {
+	border: 1px solid #e1ba6f;
+	box-shadow: 0px 0px 4px rgba(225,186,111,1);
+	-webkit-box-shadow: 0px 0px 4px rgba(225,186,111,1);
+	-moz-box-shadow: 0px 0px 4px rgba(225,186,111,1);
+}
+.back a {
+	display: block;
+	width: 62px;
+	height: 19px;
+	background-image: url(../images/com-back.gif);
+	overflow: hidden;
+	text-indent: -9999px;
+	margin: 0px auto;
+}
+.back a:hover {
+	background-position: 0px -19px;
+}
+
+
+/* ----- sitemap ----- */
+#sm {
+	font-size: 95%;
+	line-height: 150%;
+	color: #666;
+}
+#sm span {
+	color: #09f;
+	font-weight: bold;
+}
+#sm .ps {
+	color: #f85900;
+	font-weight: bold;
+}
+#sm li span {
+	color: #09f;
+	font-weight: bold;
+	padding-right: 10px;
+}
+#sm .dotline {
+	background-image: url(../images/com-dotline-1.gif);
+	background-repeat: repeat-x;
+	background-position: left center;
+	height: 40px;
+}
+#sm .maptree ul {
+	margin-left: 20px;
+	list-style-type: none;
+}
+#sm .maptree li {
+	list-style-type: none;
+}
+#sm .maptree li span {
+	color: #333;
+	font-weight: bold;
+}
+#sm .maptree li a {
+	color: #666;
+	text-decoration: none;
+}
+#sm .maptree li a:hover {
+	color: #f85900;
+	position:relative;
+	left: 1px;
+	top: 1px;
+}
+#sm h1{
+    font-size: 100%;
+	line-height: 150%;
+	color: #666;
+}
+#sm h1 a{
+	font-size: 100%;
+	line-height: 150%;
+	color: #666;
+	text-decoration: none;
+}
+#sm h1 a:hover{
+    font-size: 100%;
+	line-height: 150%;
+	line-height: 150%;
+	color: #666;
+}

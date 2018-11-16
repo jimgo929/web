@@ -1,0 +1,184 @@
+﻿@charset "utf-8";
+
+
+/* ----- formSearch ----- */
+#formSearch {
+	margin-top: -10px;
+	margin-bottom: 10px;
+	font-size: 15px;
+	color: #0734a8;
+	font-weight: bold;
+}
+
+
+/* ----- formTable ----- */
+#formTable {
+	margin-bottom: 20px;
+}
+#formTable .TL {
+	float: left;
+	width: 800px;
+}
+#formTable .TR {
+	float: right;
+	width: 70px;
+	margin-top: 2px;
+}
+#formTable .TR a:hover {
+	position:relative;
+	left: 1px;
+	top: 1px;
+}
+#formTable h1 {
+	font-size: 145%;
+	font-weight: bold;
+	color:#0734a8;
+	line-height: 120%;
+}
+#formTable .date {
+	font-size: 95%;
+	color: #f85900;
+}
+#formTable .date span{
+	font-weight:bold;
+	padding:0 3px;
+}
+#formTable .dotline {
+	clear: both;
+	height: 20px;
+}
+#formTable .Tnote{
+	color: #888888;
+}
+#formTable .Rnote{
+	color: #ff0000;
+	font-size: 95%;
+}
+#formTable > article {
+	font-size: 95%;
+	line-height: 150%;
+	color: #666;
+	margin-bottom: 20px;
+}
+#formTable > article strong {
+	font-size: 120%;
+	font-weight: bold;
+}
+#formTable > article .txt {
+	font-size: 100%;
+	text-align:center;
+	margin-bottom:6px;
+}
+#formTable > article .txt span{
+	font-size: 110%;
+	line-height: 135%;
+	text-align:center;
+	font-weight: bold;
+	color:#0734a8;
+}
+#formTable th {
+	height: 30px;
+	font-size: 95%;
+	font-weight: bold;
+	color: #333;
+	padding: 6px 3px;
+	background-repeat: repeat-x;
+	background-position:bottom;
+	background-color:#deefff;
+}
+#formTable tr {
+	background-color:#ffffff;
+}
+#formTable tr:hover {
+	background-color: #fffae5;
+}
+#formTable td {
+	padding: 6px 3px;
+	text-align:center;
+}
+
+#formTable td a{
+	color: #0099ff;
+	text-decoration: none;
+}
+#formTable td a:hover {
+	color: #f85900;
+	position:relative;
+	left: 1px;
+	top: 1px;
+}
+
+#formTable .gray th {
+	height: 30px;
+	font-size: 95%;
+	font-weight: bold;
+	color: #333;
+	padding: 3px 3px;
+	background-repeat: repeat-x;
+	background-position:bottom;
+	background-color:#eeeeee;
+}
+#formTable .gray tr {
+	background-color:#ffffff;
+}
+#formTable .gray td {
+	padding: 8px 3px;
+	text-align:center;
+}
+#formTable .gray .colorR {
+	background-color:#FFE6E6;
+}
+#formTable .gray .colorG {
+	background-color:#E5F3E2;
+}
+#formTable .gray .colorY {
+	background-color:#ffffcc;
+}
+
+
+#formTable .line-top {
+	clear:both;
+	height: 2px;
+	background-image: none;
+	background-color:#99c6e9;
+	padding: 0px;
+}
+#formTable .line-bottom {
+	height: 1px;
+	background-image: none;
+	background-color:#99c6e9;
+	padding: 0px;
+}
+#formTable .line-space {
+	height: 10px;
+	background-image: none;
+	background-color: #fff;
+	padding: 0px;
+}
+#formTable .data{
+	padding: 6px 8px;
+	text-align:left;
+}
+#formTable .left{
+	text-align:left;
+}
+#formTable .right{
+	float:right;
+}
+#formTable .note{
+	color: #666666;
+	margin-top:20px;
+}
+#formTable .note ol, ul{
+	margin-left:20px;
+}
+#formTable #formPic {
+	text-align: center;
+	padding: 15px;
+	margin-bottom: 20px;
+}
+#formTable #formPic .txt {
+	font-weight: bold;
+	color:#0734a8;
+	margin-bottom:5px;
+}
